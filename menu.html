@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spicy Hut | Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS link -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <h1 class="logo">Spicy Hut</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="about.html">About</a>
+      <a href="offers.html">Offers</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <!-- ===== MENU HERO ===== -->
+  <section class="menu-hero">
+    <h2>Our Delicious Menu</h2>
+    <p>Fresh • Spicy • Tasty</p>
+  </section>
+
+  <!-- ===== MENU SECTION ===== -->
+  <section class="menu-section">
+
+    <div class="menu-card">
+    <img src="images/chicken65.jpg" alt="Chicken 65">
+    <h4>Chicken 65</h4>
+    <p>Deep fried spicy chicken</p>
+    <span>Rs. 450</span>
+    <button class="btn" onclick="addToCart('Chicken 65', 450)" style="margin-bottom: 15px; cursor: pointer; border: none;">Add to Cart</button>
+</div>
+<div class="menu-card">
+    <img src="images/chicken65.jpg" alt="Chicken 65">
+    <h4>Chicken 45</h4>
+    <p>Fresh chicken</p>
+    <span>Rs. 560</span>
+    <button class="btn" onclick="addToCart('Chicken 65', 450)" style="margin-bottom: 15px; cursor: pointer; border: none;">Add to Cart</button>
+</div>
+<div class="menu-card">
+    <img src="images/chicken65.jpg" alt="Chicken 65">
+    <h4>Chicken 85</h4>
+    <p>Fry chicken</p>
+    <span>Rs. 500</span>
+    <button class="btn" onclick="addToCart('Chicken 65', 450)" style="margin-bottom: 15px; cursor: pointer; border: none;">Add to Cart</button>
+</div>
+
+<div class="menu-card">
+    <img src="images/chicken65.jpg" alt="Chicken 65">
+    <h4>Chicken 60</h4>
+    <p>New Chicken</p>
+    <span>Rs. 250</span>
+    <button class="btn" onclick="addToCart('Chicken 65', 450)" style="margin-bottom: 15px; cursor: pointer; border: none;">Add to Cart</button>
+</div>
+
+<div class="menu-card">
+    <img src="images/chicken65.jpg" alt="Chicken 65">
+    <h4>Chicken 70</h4>
+    <p>Deep fried spicy chicken</p>
+    <span>Rs. 600</span>
+    <button class="btn" onclick="addToCart('Chicken 65', 450)" style="margin-bottom: 15px; cursor: pointer; border: none;">Add to Cart</button>
+</div>
+
+<div class="menu-card">
+    <img src="images/chicken65.jpg" alt="Chicken 65">
+    <h4>Chicken 79</h4>
+    <p>Deep fried spicy chicken</p>
+    <span>Rs. 450</span>
+    <button class="btn" onclick="addToCart('Chicken 65', 450)" style="margin-bottom: 15px; cursor: pointer; border: none;">Add to Cart</button>
+</div>
+      
+    <!-- Starters -->
+  
+
+  </section>
+  <script>
+  function addToCart(name, price) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push({ name: name, price: price });
+    localStorage.setItem('cart', JSON.stringify(cart));
+    alert(name + " added to cart!");
+  }
+</script>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2026 Spicy Hut Restaurant | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

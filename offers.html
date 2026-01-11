@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spicy Hut - Offers</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ===== Navbar ===== */
+        nav {
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        nav a {
+            margin-left: 10px;
+            margin-right: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* ===== Hero Section ===== */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("images/offers_bg.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding:  100px 20px;
+           }
+        
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 20px;
+        }
+
+        /* ===== Offers Section ===== */
+        .offers {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 20px;
+            gap: 20px;
+            background-color: #f8f8f8;
+        }
+        .offer-card {
+            background-color: #fff;
+            padding: 20px;
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        .offer-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .offer-card h2 {
+            color: #e63946;
+            margin-bottom: 10px;
+        }
+        .offer-card p {
+            color: #333;
+            font-size: 14px;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 600px) {
+            .offers {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="offers.html">Offers</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Special Offers</h1>
+        <p>Enjoy our best deals and discounts every week!</p>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers">
+
+        <div class="offer-card">
+            <img src="images/pizza_offer.jpg" alt="Pizza Offer">
+            <h2>50% Off Pizza</h2>
+            <p>Get 50% discount on all pizzas every Monday!</p>
+        </div>
+
+        <div class="offer-card">
+            <img src="images/burger_offer.jpg" alt="Burger Offer">
+            <h2>Buy 1 Get 1 Free</h2>
+            <p>Buy 1 burger and get another free on weekends!</p>
+        </div>
+
+        <div class="offer-card">
+            <img src="images/dessert_offer.jpg" alt="Dessert Offer">
+            <h2>Free Dessert</h2>
+            <p>Order any meal and get a free dessert every Friday!</p>
+        </div>
+
+        <div class="offer-card">
+            <img src="images/drinks_offer.jpg" alt="Drinks Offer">
+            <h2>Happy Hour Drinks</h2>
+            <p>50% off on all soft drinks between 5PM-7PM!</p>
+        </div>
+
+        <div class="offer-card">
+            <img src="images/family_offer.jpg" alt="Family Offer">
+            <h2>Family Combo</h2>
+            <p>Special family combo meals with extra sides at a discount!</p>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Spicy Hut. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

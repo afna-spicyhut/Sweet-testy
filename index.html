@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Spicy Hut | Taste the Fire</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#1f242b;
+  color:#fff;
+}
+
+/* ===== NAVBAR ===== */
+header{
+  background:#2a2f36;
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:26px;
+  font-weight:bold;
+  color:#ff4d30;
+}
+
+.logo span{
+  display:block;
+  font-size:14px;
+  color:#fff;
+}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+  margin-left:25px;
+  font-size:14px;
+}
+
+/* ===== HERO SECTION ===== */
+.hero{
+  display:flex;
+  align-items:center;
+  padding:60px 40px;
+  background:
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1604908177522-429de69d2d15")
+  background-size:cover;
+  background-position:center;
+}
+
+.hero-content{
+  max-width:500px;
+}
+
+.hero h1{
+  font-size:38px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  font-size:15px;
+  margin-bottom:20px;
+  color:#ddd;
+}
+
+.btn{
+  background:#ff4d30;
+  padding:12px 25px;
+  border-radius:25px;
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+}
+
+/* ===== POPULAR DISHES ===== */
+.section{
+  padding:50px 40px;
+}
+
+.section h2{
+  margin-bottom:30px;
+  font-size:26px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#2a2f36;
+  border-radius:15px;
+  padding:15px;
+}
+
+.card img{
+  width:100%;
+  border-radius:12px;
+}
+
+.card h3{
+  margin:15px 0 10px;
+}
+
+.card p{
+  font-size:13px;
+  color:#ccc;
+}
+
+/* ===== OFFER CARD ===== */
+.offer{
+  background:#2a2f36;
+  border-radius:15px;
+  padding:25px;
+  text-align:center;
+}
+
+.offer h3{
+  margin-bottom:10px;
+}
+
+.offer p{
+  font-size:14px;
+  color:#ddd;
+  margin-bottom:15px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#2a2f36;
+  padding:30px 40px;
+  margin-top:40px;
+}
+
+footer p{
+  font-size:14px;
+  color:#ccc;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <div class="logo">🔥 SPICY HUT <span>Taste the Fire</span></div>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="menu.html">MENU</a>
+    <a href="offers.html">OFFERS</a>
+    <a href="about.html">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="cart.html">CART</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-cotent">
+    <h1>Experience Authentic Sri lankan Spice</h1>
+    <p>Traditional recipes made with rich spices and fiery flavors.</p>
+    <a href="menu.html" class="btn">VIEW MENU</a>
+  </div>
+</section>
+
+<!-- POPULAR DISHES -->
+<section class="section">
+  <h2>Popular Dishes</h2>
+
+  <div class="cards">
+    <div class="card">
+        
+      <img src="images/chicken_tikka.jpg">
+      <h3>Chicken Tikka</h3>
+      <p>Juicy chicken marinated with spices and grilled perfectly.</p>
+    </div>
+
+    <div class="card">
+        <img src="images/chicken_biriyani.jpg">
+      <h3>Chicken Biryani</h3>
+      <p>Flavored basmati rice with spicy chicken masala.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1628294895950-9805252327bc">
+      <h3>Chili Paneer</h3>
+      <p>Paneer tossed with Indo-Chinese spicy sauce.</p>
+    </div>
+
+    <div class="offer">
+      <h3>20% off your first order</h3>
+      <p>Free dessert with any main course</p>
+      <a href="contact.html" class="btn">ORDER NOW</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p><strong>About Us</strong></p>
+  <p>123 Spice Lane, Flavor Town</p>
+  <p>Phone: 555-SPICY</p>
+  <p>Email: info@spicyhut.com</p>
+</footer>
+
+</body>
+</html>

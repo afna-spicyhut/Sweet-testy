@@ -1,0 +1,592 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;   /* 🔥 VERY IMPORTANT */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+  background: #b30000;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  height: 300px;
+  background-image: url("images/restaurant.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text  {
+  padding: 20px;
+  text-align: center;
+background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+.hero-text h1 {
+  color: white;
+}
+
+.hero-text p {
+  color: #ff4500;
+  font-weight: orange;
+}
+
+/* MENU */
+.menu {
+  padding: 40px;
+  text-align: center;
+}
+
+.menu-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.card {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card span {
+  display: block;
+  margin-bottom: 10px;
+  color: #b30000;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #b30000;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
+.menu-hero {
+  background: #ffe6e6;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.menu-hero h2 {
+  font-size: 32px;
+  color: #b30000;
+}
+
+/* MENU SECTION */
+.menu-section {
+  padding: 30px 20px;
+}
+
+.menu-title {
+  margin: 30px 0 15px;
+  color: #b30000;
+  font-size: 24px;
+}
+
+/* GRID */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.menu-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  background: white;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover; 
+  border-radius: 10px 10px 0 0;
+}
+.menu-card h4 {
+  margin: 10px 0;
+}
+
+.menu-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.menu-card span {
+  display: block;
+  margin: 10px 0 15px;
+  font-weight: bold;
+  color: #b30000;
+}
+
+/* FOOTER */
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* ===== MENU HERO BACKGROUND ===== */
+.menu-hero {
+  background: linear-gradient(
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.6)
+    ),
+    url("../images/menu_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.menu-hero h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.menu-hero p {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+/* ===== MENU PAGE ONLY ===== */
+.menu-card:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+/* ===== MENU PAGE BACKGROUND ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("images/menu_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ===== ABOUT US PAGE ===== */
+
+.page-header {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("images/about-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.about-section {
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.about-content h2 {
+  color: #c0392b;
+  margin-top: 20px;
+}
+
+.about-content p {
+  line-height: 1.6;
+  color: #333;
+}
+
+.about-content ul {
+  margin-top: 10px;
+}
+
+.about-content ul li {
+  margin-bottom: 8px;
+}
+
+.footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}.page-header {
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("images/about-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+/* ===== ABOUT PAGE HEADER BACKGROUND IMAGE ===== */
+.about-header {
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("images/about_bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+/* ===== Hero Section ===== */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("images/offers_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 20px;
+}body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+/* About section */
+.about-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-section h1 {
+  color: #c0392b;
+  margin-bottom: 10px;
+}
+
+.about-text {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Team title */
+.team-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Team container */
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Team card */
+.team-card {
+  width: 250px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Images */
+.team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Text */
+.team-card h3 {
+  margin: 5px 0;
+  color: #c0392b;
+}
+
+.team-card p {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.team-card span {
+  font-size: 14px;
+  color: #555;
+}
+/* About page image style */
+.about-img {
+    display: block;
+    margin: 25px auto;
+    width: 500px;
+    max-width: 95%;
+    border-radius: 10px;
+}
+
+/* ===== Offers Section ===== */
+.offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+    gap: 20px;
+    background-color: #f8f8f8;
+}
+nav a {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+.offer-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.offer-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.offer-card h2 {
+    color: #e63946;
+    margin-bottom: 10px;
+}
+.offer-card p {
+    color: #333;
+    font-size: 14px;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    .offers {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+ /* ===== CONTACT HERO ===== */
+.contact-hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("images/contact_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+}
+/* ===== CONTACT PAGE BACKGROUND ===== */
+body.contact-page {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("images/contact_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+  display: flex;
+  gap: 30px;
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  background: #ff5722;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+.contact-form button:hover {
+  background: #e64a19;
+
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+/* ===== CONTACT PAGE TEXT COLOR ===== */
+.contact-info,
+.contact-info p {
+  color: white;
+ body {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 16px;
+  background: #111;
+}
+
+.navbar .logo h1 {
+  color: #ff5722;
+  font-size: 24px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #ff5722;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
